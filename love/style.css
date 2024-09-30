@@ -1,0 +1,30 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+    text-align: center;
+}
+
+.container {
+    margin-top: 100px;
+}
+
+#nicknameInput {
+    padding: 10px;
+    margin-top: 10px;
+}
+
+#submitBtn {
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #FF69B4;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+
+.hidden {
+    display: none;
+}

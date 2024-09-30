@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> Birthday</title>
+  <link rel="stylesheet" href="index.css">
+  <style>
+    /* Position the text at the top of the page */
+    h1 {
+        position: absolute;
+        top: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        font-size: 5em; /* Increase the text size */
+        display: inline-block;
+        font-family: 'Arial', sans-serif;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); /* Optional shadow effect */
+        white-space: nowrap;
+    }
+
+    /* Styling and animation for each character */
+    .colored-letter {
+        display: inline-block;
+        animation: bounce 1.5s infinite;
+    }
+
+    /* Bouncing animation */
+    @keyframes bounce {
+        0%, 100% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(-20px);
+        }
+    }
+</style>
+<style>
+    /* Full height and background color */
+    body {
+        height: 100vh;
+        margin: 0;
+        background-color: #f0f0f0; /* Light background color */
+        position: relative; /* Required for absolute positioning of the button */
+    }
+
+    .wish-button {
+        position: absolute; /* Positioning button at bottom right */
+        bottom: 20px; /* Distance from the bottom */
+        right: 20px; /* Distance from the right */
+        padding: 15px 30px;
+        font-size: 1.5em;
+        color: white;
+        background-color: #ff5733; /* Button color */
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+
+    .wish-button:hover {
+        background-color: #c70039; /* Darker shade on hover */
+    }
+</style>
+</head>
+<body>
+    <h1>
+        <!-- Each letter with a different color -->
+        <span class="colored-letter" style="color: red;">H</span>
+        <span class="colored-letter" style="color: orange;">A</span>
+        <span class="colored-letter" style="color: yellow;">P</span>
+        <span class="colored-letter" style="color: green;">P</span>
+        <span class="colored-letter" style="color: blue;">Y</span>
+        <span class="colored-letter" style="color: violet;"> </span>
+        <span class="colored-letter" style="color: red;">B</span>
+        <span class="colored-letter" style="color: orange;">I</span>
+        <span class="colored-letter" style="color: yellow;">R</span>
+        <span class="colored-letter" style="color: green;">T</span>
+        <span class="colored-letter" style="color: blue;">H</span>
+        <span class="colored-letter" style="color: violet;">D</span>
+        <span class="colored-letter" style="color: red;">A</span>
+        <span class="colored-letter" style="color: orange;">Y</span>
+        <span class="colored-letter" style="color: yellow;"> </span>
+        <span class="colored-letter" style="color: green;">M</span>
+        <span class="colored-letter" style="color: blue;">Y</span>
+        <span class="colored-letter" style="color: violet;"> </span>
+        <span class="colored-letter" style="color: red;">L</span>
+        <span class="colored-letter" style="color: orange;">I</span>
+        <span class="colored-letter" style="color: yellow;">F</span>
+        <span class="colored-letter" style="color: green;">E</span>
+        <span class="colored-letter" style="color: blue;">❤️</span>
+        <span class="colored-letter" style="color: violet;">❤️</span>
+    </h1>
+
+  <!-- Video Background -->
+  <video autoplay muted loop id="background-video">
+    <source src="vedio.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Main Content: Images and Animations -->
+  <div class="container">
+    <div class="main-pic">
+      <img src="cute.jpg" alt="Main Pic">
+    </div>
+    <div class="circle">
+      <img src="pic1.jpg" alt="Pic 1">
+      <img src="pic11.webp" alt="Pic 2">
+      <img src="main.jpg" alt="Pic 3">
+      <img src="pic4.jpg" alt="Pic 4">
+      <img src="pic5.jpg" alt="Pic 5">
+      <img src="pic6.jpg" alt="Pic 6">
+      <img src="pic7.jpg" alt="Pic 7">
+      <img src="pic8.jpg" alt="Pic 8">
+      <img src="pic10.webp" alt="Pic 9">
+      <img src="main.webp" alt="Pic 10">
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+  <a href="wish.html">
+    <button class="wish-button">Go For Wish</button>
+</a>
+</body>
+</html>
